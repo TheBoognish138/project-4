@@ -1,0 +1,12 @@
+#map-container {
+    height: 800px;
+}
+
+#map {
+    height: 100%;
+}
+
+.marker-cluster div {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background */
+    color: rgba(0, 0, 0, 1); /* Black Text */
+}
