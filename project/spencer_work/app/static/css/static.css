@@ -1,0 +1,104 @@
+/* Define Color Variables */
+:root {
+    --bon-jour: #EEE9EC;
+    --crail: #B73E44;
+    --salt-box: #635D6D;
+    --brandy-rose: #B88680;
+}
+
+/* Apply Background and Text Colors */
+body {
+    background-color: var(--bon-jour); /* Set the background to Bon Jour */
+    color: var(--salt-box); /* Set default text color to Salt Box */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--salt-box); /* Set heading colors */
+}
+
+h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: 700; /* Make header bold */
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Link Styling */
+a {
+    color: var(--crail); /* Default link color */
+}
+
+a:hover {
+    color: var(--brandy-rose); /* Link hover color */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--crail); /* Crail background */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--bon-jour); /* Navbar link color */
+}
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--brandy-rose); /* Link hover and active color */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--crail); /* Primary button background */
+    border-color: var(--crail); /* Primary button border */
+    color: var(--bon-jour); /* Primary button text color */
+}
+
+.btn-primary:hover {
+    background-color: var(--brandy-rose); /* Button hover background */
+    border-color: var(--brandy-rose); /* Button hover border */
+}
+
+/* Card and Container Styling */
+.container-fluid {
+    background-color: var(--bon-jour); /* Container background */
+}
+
+.card, .col-md-3 {
+    border: 1px solid var(--salt-box); /* Card border color */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between cards */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card:hover, .col-md-3:hover {
+    border-color: var(--crail); /* Card border hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+.fixed-size-img {
+    border: 2px solid var(--brandy-rose); /* Border for images */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Custom Styling for "Works Cited" Section */
+.text-center h2, .text-center p, .text-center a {
+    color: var(--salt-box); /* Ensure text is visible on light background */
+}
+
+.text-center a:hover {
+    color: var(--brandy-rose); /* Link hover effect */
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--salt-box); /* Horizontal rule styling */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.img-fluid {
+    border: 3px solid var(--salt-box); /* Image border */
+}
