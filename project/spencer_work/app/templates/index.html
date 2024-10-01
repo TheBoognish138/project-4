@@ -22,7 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom JS -->
-    <script type="text/javascript" src="static/js/logic.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
 </head>
 
 <body>
@@ -34,16 +35,16 @@
             </a>
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/dashboard1">Census Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/dashboard2">CKD Dashboard</a>
+                    <a class="nav-link" href="/dashboard2">CKD Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/index">Machine Learning</a>
+                    <a class="nav-link active" href="/index">Machine Learning</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about_us">About Us</a>
@@ -230,6 +231,51 @@
                                 <input type="number" class="form-control" id="cholesterolTriglycerides"
                                     name="cholesterolTriglycerides" min="50" max="400" value="0" required>
                             </div>
+                            <div class="mb-3">
+                                <label for="nsaidsUse" class="form-label">NSAIDs Use (1-10/week)</label>
+                                <input type="number" class="form-control" id="nsaidsUse"
+                                    name="nsaidsUse" min="0" max="10" value="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fatigueLevels" class="form-label">Fatigue Levels (1-10)</label>
+                                <input type="number" class="form-control" id="fatigueLevels" name="fatigueLevels"
+                                    min="1" max="10" value="5" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nauseaVomiting" class="form-label">Nausea/Vomiting (1-10)</label>
+                                <input type="number" class="form-control" id="nauseaVomiting" name="nauseaVomiting"
+                                    min="1" max="10" value="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="muscleCramps" class="form-label">Muscle Cramps (1-10)</label>
+                                <input type="number" class="form-control" id="muscleCramps" name="muscleCramps"
+                                    min="1" max="10" value="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="itching" class="form-label">Itching (1-10)</label>
+                                <input type="number" class="form-control" id="itching" name="itching"
+                                    min="1" max="10" value="0" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="qualityOfLifeScore" class="form-label">Quality of Life Score (1-10)</label>
+                                <input type="number" class="form-control" id="qualityOfLifeScore" name="qualityOfLifeScore"
+                                    min="1" max="10" value="5" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="medicalCheckupsFrequency" class="form-label">Medical Checkups Frequency (1-12 per year)</label>
+                                <input type="number" class="form-control" id="medicalCheckupsFrequency" name="medicalCheckupsFrequency"
+                                    min="1" max="12" value="2" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="medicationAdherence" class="form-label">Medication Adherence (1-10)</label>
+                                <input type="number" class="form-control" id="medicationAdherence" name="medicationAdherence"
+                                    min="1" max="10" value="8" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="healthLiteracy" class="form-label">Health Literacy (1-10)</label>
+                                <input type="number" class="form-control" id="healthLiteracy" name="healthLiteracy"
+                                    min="1" max="10" value="7" required>
+                            </div>
                         </div>
 
                         <!-- Right Column: Checkboxes and Radio Buttons -->
@@ -331,6 +377,14 @@
                                         value="1">
                                     <label class="form-check-label" for="occupationalExposureChemicals">
                                         Occupational Exposure to Chemicals
+                                    </label>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox"
+                                        id="smoking" name="smoking"
+                                        value="1">
+                                    <label class="form-check-label" for="smoking">
+                                        Smoking
                                     </label>
                                 </div>
                             </div>
