@@ -135,9 +135,9 @@ function makePredictions() {
             var prob = parseFloat(returnedData["prediction"]);
 
             if (prob > 0.5) {
-                $("#output").text(`Based on the information entered, there is a ${Math.round(prob * 100).toFixed(2)}% probability that you may be diagnosed with CKD. Please consult a healthcare professional for further testing and advice.`);
+                $("#output").text(`Based on the information entered, there is a ${Math.round(prob * 100)}% probability that you may be diagnosed with CKD. Please consult a healthcare professional for further testing and advice.`);
             } else {
-                $("#output").text(`Great news! Based on the information entered, there is a ${Math.round(prob * 100).toFixed(2)}% probability that you may be diagnosed with CKD. Please consult a healthcare professional for further testing and advice.`);
+                $("#output").text(`Great news! Based on the information entered, there is a ${Math.round(prob * 100)}% probability that you may be diagnosed with CKD. Please consult a healthcare professional for further testing and advice.`);
             }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {

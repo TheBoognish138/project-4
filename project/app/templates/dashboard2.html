@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Census Dashboard</title>
+    <title>CKD Dashboard</title>
     
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -36,13 +36,13 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/dashboard1">Census Dashboard</a>
+                    <a class="nav-link" href="/dashboard1">Census Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard2">CKD Dashboard</a>
+                    <a class="nav-link active" href="/dashboard2">CKD Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/index">Machine Learning</a>
+                    <a class="nav-link" href="/index">CKD Predictor</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about_us">About Us</a>
@@ -57,7 +57,9 @@
     <!-- Content Section -->
     <div class="container-fluid" style="margin-top:25px; margin-bottom: 25px;">
         <div style="text-align: center;">
-            <h1>Embedded Tableau</h1>
+            <h1>Chronic Kidney Disease Dashboard</h1>
+        </br>
+            <p>The data visualization shown below is based on our dataset. From the bar chart we can easily see that % of all people diagnosed with kidney disease is ranging in between 0.7 to 2.3%. If we  change gender to male, Urinary Tract Infection and Family History of Kidney Disease it increase the percentage up to almost 12%. This suggests that these factors may significantly increase the risk of developing kidney disease. The sunburst chart indicates Caucasian with middle socioeconomic status and bachelor's degree have the highest % of people diagnosed with kidney disease. This finding may indicate a complex interplay of genetic, socioeconomic, and educational factors influencing health outcomes. These visualizations effectively highlight at-risk populations and underscore critical factors associated with kidney disease.</p>
         </div>
     </div>
     <hr>
@@ -75,7 +77,7 @@
     <!-- The div where we will inject our Tableau -->
     <div id="tableauParent" class="container-fluid">
         <tableau-viz id="tableauViz"       
-            src='https://public.tableau.com/views/Census_Dashboard_17276280532040/CensusData'>
+            src='https://public.tableau.com/views/KideneyDisease/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
         </tableau-viz>
     </div>
 

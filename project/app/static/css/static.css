@@ -102,3 +102,7 @@ hr {
 .img-fluid {
     border: 3px solid var(--salt-box); /* Image border */
 }
+
+#tableauViz {
+    height: 900px;
+}
