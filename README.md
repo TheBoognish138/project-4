@@ -1,4 +1,4 @@
-# README: project_4_group_4
+# README: Chronic Kidney Disease Machine Learning Experiment
 
 This README is for Project 4 - Interactive Machine Learning Model of the Data Bootcamp April Session.
 
